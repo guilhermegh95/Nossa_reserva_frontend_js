@@ -13,6 +13,7 @@ export function TOKEN_POST(body) {
   };
 }
 
+
 export function USER_GET(token) {
   return {
     url: API_URL + '/api/v2/usuarios/',
