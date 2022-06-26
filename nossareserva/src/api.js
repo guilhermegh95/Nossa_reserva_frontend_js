@@ -38,5 +38,19 @@ export function USER_GET(token) {
         body: JSON.stringify(body),
       },
     };
-
 }
+
+export function LOCACAO_POST(body) {
+  console.log(JSON.stringify(body));
+  return {
+    url: API_URL + '/api/v2/arealocacoes/',
+    options: {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(body),
+    },
+  };
+}
+
