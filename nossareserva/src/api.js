@@ -54,3 +54,17 @@ export function LOCACAO_POST(body) {
   };
 }
 
+export function AREACOMUM_POST(body) {
+  console.log(JSON.stringify(body));
+  return {
+    url: API_URL + '/api/v2/areascomuns/',
+    options: {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(body),
+    },
+  };
+}
+
