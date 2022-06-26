@@ -8,13 +8,17 @@
 .login::before {
   display: block;
   content: '';
-  background: url('../../Assets/login.jpg') no-repeat center center;
+  background: url('../../Assets/apartamento.jpg') no-repeat center center;
   background-size: cover;
 }
 
 .forms {
   max-width: 30rem;
   padding: 1rem;
+}
+
+h3 {
+  padding-bottom: 100px;
 }
 
 @media (max-width: 40rem) {

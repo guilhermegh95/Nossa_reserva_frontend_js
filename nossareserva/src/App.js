@@ -18,9 +18,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login/*" element={<Login />} />
-            <Route path="/usuario/*" element={<Usuario />} />
             <Route 
-              path="/conta" 
+              path="/apartamento/*" 
               element={
                 <ProtectedRoute>
                   <Usuario/>
