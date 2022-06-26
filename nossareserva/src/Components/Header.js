@@ -15,7 +15,7 @@ const Header = () => {
           <Dogs />
         </Link>
         {data ? (
-          <Link className={styles.login} to="/apartamento">
+          <Link className={styles.login} to="/">
             Root
           </Link>
         ) : (

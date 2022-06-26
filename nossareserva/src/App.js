@@ -8,6 +8,7 @@ import Login from './Components/Login/Login';
 import Usuario from './Components/Usuarios/Usuario'
 import Locacao from './Components/Locacao/Locacao'
 import AreaComum from './Components/AreaComum/AreaComum'
+import Condominio from './Components/Condominio/Condominio'
 import ProtectedRoute from './Components/Helper/ProtectedRoute';
 import { UserStorage } from './UserContext';
 
@@ -48,6 +49,14 @@ function App() {
               element={
                 <ProtectedRoute>
                   <AreaComum/>
+                </ProtectedRoute>
+              } 
+            />
+            <Route 
+              path="/condominio/*" 
+              element={
+                <ProtectedRoute>
+                  <Condominio/>
                 </ProtectedRoute>
               } 
             />

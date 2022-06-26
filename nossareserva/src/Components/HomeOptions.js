@@ -23,6 +23,11 @@ const HomeOptions = () => {
       <Link to="/locacao">
         <Button>Locações</Button>
       </Link>
+        <br/>
+        <br/>
+      <Link to="/condominio">
+        <Button>Condominio</Button>
+      </Link>
     </section>
   );
 };

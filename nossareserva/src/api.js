@@ -68,3 +68,18 @@ export function AREACOMUM_POST(body) {
   };
 }
 
+
+export function CONDOMINIO_POST(body) {
+  console.log(JSON.stringify(body));
+  return {
+    url: API_URL + '/api/v2/condominio/',
+    options: {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(body),
+    },
+  };
+}
+
