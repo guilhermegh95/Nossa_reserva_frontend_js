@@ -25,3 +25,18 @@ export function USER_GET(token) {
     },
   };
 }
+
+  export function USER_POST(body) {
+    console.log(JSON.stringify(body));
+    return {
+      url: API_URL + '/api/v2/usuarios/',
+      options: {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(body),
+      },
+    };
+
+}

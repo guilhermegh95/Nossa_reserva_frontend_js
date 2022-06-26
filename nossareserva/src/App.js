@@ -5,6 +5,7 @@ import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Home from './Components/Home';
 import Login from './Components/Login/Login';
+import Usuario from './Components/Usuarios/Usuario'
 import { UserStorage } from './UserContext';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login/*" element={<Login />} />
+            <Route path="/usuario/*" element={<Usuario />} />
           </Routes>
           <Footer />
         </UserStorage>
