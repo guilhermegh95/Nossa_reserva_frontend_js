@@ -15,7 +15,6 @@ const Locacao = () => {
           <Route path="/" element={<Navegacao />} />
           <Route path="cadastrar" element={<CadastrarCondominio />} />
           <Route path="listar" element={<ListarCondominio />} />
-          <Route path="unitario" element={<CadastrarCondominio />} />
         </Routes>
       </div>
     </section>

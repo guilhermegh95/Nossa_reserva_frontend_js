@@ -3,6 +3,7 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import CadastrarLocacao from './CadastrarLocacao';
 import LocacaoHeader from './LocacaoHeader';
 import Navegacao from './Navegacao';
+import ListarLocacao from './ListarLocacao'
 import Feed from '../Feed/Feed';
 import styles from './Locacao.module.css';
 
@@ -15,8 +16,7 @@ const Locacao = () => {
         <Routes>
           <Route path="/" element={<Navegacao />} />
           <Route path="cadastrar" element={<CadastrarLocacao />} />
-          <Route path="listar" element={<CadastrarLocacao />} />
-          <Route path="unitario" element={<CadastrarLocacao />} />
+          <Route path="listar" element={<ListarLocacao />} />
         </Routes>
       </div>
     </section>

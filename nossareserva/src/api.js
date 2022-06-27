@@ -97,6 +97,20 @@ export function CONDOMINIO_GET(body) {
   };
 }
 
+export function LOCACAO_GET(body) {
+  console.log(JSON.stringify(body));
+  return {
+    url: API_URL + '/api/v2/arealocacoes/',
+    options: {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(body),
+    },
+  };
+}
+
 
 export function CONDOMINIO_DELETE(id) {
   console.log(id)
@@ -110,5 +124,20 @@ export function CONDOMINIO_DELETE(id) {
     },
   };
 }
+
+export function LOCACAO_DELETE(id) {
+  console.log(id)
+  return {
+    url: `${API_URL}/api/v2/arealocacoes/${id}/`,
+    options: {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    },
+  };
+}
+
+
 
 

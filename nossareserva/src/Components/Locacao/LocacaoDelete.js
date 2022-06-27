@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from './CondominioDelete.module.css';
-import { CONDOMINIO_DELETE } from '../../api';
+import styles from './LocacaoDelete.module.css';
+import { LOCACAO_DELETE } from '../../api';
 import useFetch from '../../Hooks/useFetch';
 import { useNavigate } from 'react-router-dom';
 
@@ -11,7 +11,7 @@ const PhotoDelete = ({ id }) => {
   async function handleClick() {
     const confirm = window.confirm('Tem certeza que deseja deletar?');
     if (confirm) {
-      const { url, options } = CONDOMINIO_DELETE(id);
+      const { url, options } = LOCACAO_DELETE(id);
       const { response } = await request(url, options);
       if (response.ok) navigate('/');;
     }
