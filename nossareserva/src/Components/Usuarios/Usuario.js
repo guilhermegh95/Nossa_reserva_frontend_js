@@ -2,6 +2,7 @@ import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import CadastrarUsuario from './CadastrarUsuario';
 import UsuarioHeader from './UsuarioHeader';
+import ListarUsuario from './ListarUsuario';
 import Navegacao from './Navegacao';
 import Feed from '../Feed/Feed';
 //import LoginCreate from './LoginCreate';
@@ -19,8 +20,7 @@ const Usuario = () => {
         <Routes>
           <Route path="/" element={<Navegacao />} />
           <Route path="cadastrar" element={<CadastrarUsuario />} />
-          <Route path="listar" element={<CadastrarUsuario />} />
-          <Route path="unitario" element={<CadastrarUsuario />} />
+          <Route path="listar" element={<ListarUsuario />} />
         </Routes>
       </div>
     </section>
