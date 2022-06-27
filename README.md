@@ -12,3 +12,7 @@
  
  Quando você rodar o projeto django, se ele não estiver na porta 8000 do seu local host, lembre-se de mudar o endereço da api, no arquivo api.js
  
+Para logar no sistema, sida os dados:
+
+Username: Root
+Password: Root
