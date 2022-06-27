@@ -138,6 +138,28 @@ export function LOCACAO_DELETE(id) {
   };
 }
 
+export function AREACOMUM_GET(body) {
+  console.log(JSON.stringify(body));
+  return {
+    url: API_URL + '/api/v2/areascomuns/',
+    options: {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    },
+  };
+}
 
-
-
+export function AREACOMUM_DELETE(id) {
+  console.log(id)
+  return {
+    url: `${API_URL}/api/v2/areascomuns/${id}/`,
+    options: {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    },
+  };
+}
