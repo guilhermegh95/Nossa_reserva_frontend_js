@@ -83,3 +83,32 @@ export function CONDOMINIO_POST(body) {
   };
 }
 
+export function CONDOMINIO_GET(body) {
+  console.log(JSON.stringify(body));
+  return {
+    url: API_URL + '/api/v2/condominio/',
+    options: {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(body),
+    },
+  };
+}
+
+
+export function CONDOMINIO_DELETE(id) {
+  console.log(id)
+  return {
+    url: `${API_URL}/api/v2/condominio/${id}/`,
+    options: {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    },
+  };
+}
+
+
